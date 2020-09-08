@@ -42,9 +42,9 @@ const DEFAULT_CONFIG = {
 }
 
 const Mermaid = ({ name, chart, config }) => {
-  
+
   // Mermaid initilize its config
-  mermaid.initialize({...DEFAULT_CONFIG, ...config})
+  mermaid.initialize({ ...DEFAULT_CONFIG, ...config })
 
   useEffect(() => {
     mermaid.contentLoaded()
@@ -57,8 +57,8 @@ const Mermaid = ({ name, chart, config }) => {
     </div>
   )
 
-  
-  
+
+
 }
 
 export default Mermaid
